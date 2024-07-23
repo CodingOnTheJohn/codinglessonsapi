@@ -1,4 +1,4 @@
-class RubyController < ApplicationController
+class Api::V1::RubyController < ApplicationController
   def index
     @lessons = RubyLesson.all
     render json: LessonSerializer.new(@lessons)
