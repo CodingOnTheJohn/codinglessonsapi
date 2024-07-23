@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe JavaScript, type: :model do
+RSpec.describe JavascriptLesson, type: :model do
   describe "validations" do
     it { should validate_presence_of(:lesson) }
     it { should validate_presence_of(:topic) }

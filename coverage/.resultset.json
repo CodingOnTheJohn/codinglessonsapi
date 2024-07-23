@@ -198,16 +198,46 @@
           null
         ]
       },
+      "/Users/gbowman/codinglessonsapi/app/models/javascript_lesson.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/gbowman/codinglessonsapi/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/gbowman/codinglessonsapi/spec/models/ruby_spec.rb": {
         "lines": [
           1,
           null,
           1,
+          1,
+          2,
+          2,
+          2,
           null,
+          null
+        ]
+      },
+      "/Users/gbowman/codinglessonsapi/app/models/ruby_lesson.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
           null
         ]
       }
     },
-    "timestamp": 1721753806
+    "timestamp": 1721754343
   }
 }
