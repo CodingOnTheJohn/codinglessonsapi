@@ -51,5 +51,19 @@ RSpec.describe "Javascript API" do
       expect(lesson[:attributes][:topic]).to eq(lesson_1.topic)
       expect(lesson[:attributes][:link]).to eq(lesson_1.link)
     end
+    it "sad path for get /api/v1/javascript/1000" do
+      get "/api/v1/javascript/1000"
+
+      expect(response).to_not be_successful
+      expect(response.status).to eq(404)
+
+      data = JSON.parse(response.body, symbolize_names: true)
+      
+      expect(data[:errors]).to be_an(Array)
+      expect(data[:errors].first).to have_key(:status)
+      expect(data[:errors].first).to have_key(:message)
+      expect(data[:errors].first[:status]).to eq("404")
+      expect(data[:errors].first[:message]).to eq("Couldn't find JavascriptLesson with 'id'=1000")
+    end
   end
 end

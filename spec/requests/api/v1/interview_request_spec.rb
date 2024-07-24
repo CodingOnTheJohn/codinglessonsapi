@@ -51,5 +51,19 @@ RSpec.describe "Interview API" do
       expect(question[:attributes][:topic]).to eq(question_1.topic)
       expect(question[:attributes][:link]).to eq(question_1.link)
     end
+    it "sad path for get /api/v1/interview/1000" do
+      get "/api/v1/interview/1000"
+  
+      expect(response).to_not be_successful
+      expect(response.status).to eq(404)
+  
+      data = JSON.parse(response.body, symbolize_names: true)
+  
+      expect(data[:errors]).to be_an(Array)
+      expect(data[:errors].first).to have_key(:status)
+      expect(data[:errors].first).to have_key(:message)
+      expect(data[:errors].first[:status]).to eq("404")
+      expect(data[:errors].first[:message]).to eq("Couldn't find InterviewQuestion with 'id'=1000")
+    end
   end
 end
