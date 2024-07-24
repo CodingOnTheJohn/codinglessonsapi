@@ -4,6 +4,13 @@ class ErrorSerializer
   end
 
   def serialize
-    { error: { message: @error.message, status: @error.status.to_s } }
+    {
+      errors: [
+          {
+            status: @error.status.to_s,
+            message: @error.message,
+          }
+      ]
+    }
   end
 end
