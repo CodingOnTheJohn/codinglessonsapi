@@ -21,32 +21,37 @@ Lesson.create(
 # Create JavaScript Lessons
 Lesson.create(
   lesson_type: :javascript,
-  lesson: "Objects are used to store collections of data and more complex entities. They are created using curly braces {} and can contain properties.
+  lesson: "Objects are used to store collections of data and more complex entities. They are created using curly braces `{}` and can contain properties. The `person` object below has three properties: name, age, and height. Properties can be accessed using dot notation or bracket notation.
   ```
   let person = {
     name: 'Alice',
     age: 30,
     height: 5.6
     };
-    ```
-    The person object has three properties: name, age, and height. Properties can be accessed using dot notation or bracket notation.
-    `console.log(person.name); // 'Alice'`
-    `console.log(person['age']); // 30`
-    To add or update a property, you can simply assign a value to it.
-    `person.city = 'New York'; // Add a new property`
-    `person.age = 31; // Update an existing property`",
+    
+  console.log(person.name); // 'Alice'
+  console.log(person['age']); // 30
+  ```
+
+  To add or update a property, you can simply assign a value to it.
+
+  `person.city = 'New York'; // Add a new property`
+
+  `person.age = 31; // Update an existing property`",
   topic: "Objects",
   link: "https://www.example.com/javascript_lessons/1"
 )
 Lesson.create(
   lesson_type: :javascript,
-  lesson: "Functions:
-  Functions are reusable blocks of code that perform a specific task. They are defined using the function keyword followed by the function name and parentheses. The code block is enclosed in curly braces.
+  lesson: "Functions are reusable blocks of code that perform a specific task. They are defined using the function keyword followed by the function name and parentheses. The code block is enclosed in curly braces.
+  ```
   function greet(name) {
     return 'Hello, ' + name + '!';
     }
-    The function greet takes a name as an argument and returns a greeting message. Functions can take multiple arguments and return a value.
-    let result = greet('Alice'); // 'Hello, Alice!'",
+  ```
+  The function greet takes a name as an argument and returns a greeting message. Functions can take multiple arguments and return a value.
+  
+  `let result = greet('Alice'); // 'Hello, Alice!'`",
   topic: "Functions",
   link: "https://www.example.com
   _lessons/1"
@@ -121,16 +126,17 @@ Lesson.create(
     puts fruit
   end
   ```
-  the line `puts fruit` will be executed for each element in the array, the `|fruit|` is a block variable that represents the current element in the iteration.
+  The line `puts fruit` will be executed for each element in the array, the `|fruit|` is a block variable that represents the current element in the iteration.
   ```
   hash = {name: 'Alice', age: 30}
+
   hash.each do |key, value|
     puts key
     puts value
   end
   ```
-  the line `puts key` will output the key and `puts value` will output the value for each key-value pair in the hash.",
-  topic: "iterating",
+  The line `puts key` will output the key and `puts value` will output the value for each key-value pair in the hash.",
+  topic: "Iterating",
   link: "https://ruby-doc.org/core-2.7.0/Enumerable.html#method-i-each"
 )
 
