@@ -67,23 +67,23 @@ JavascriptLesson.create(
 
 # Create Ruby Lessons
 RubyLesson.create(
-  lesson: "# Arrays:
-  Arrays are ordered lists that are comma seperated and enclosed in square brackets. Arrays can contain any data type (integer, string, hash, array). You can mix data types in arrays but it is not recommended.
+  lesson: "## Arrays:
+  Arrays are ordered lists that are comma seperated and enclosed in square brackets. Arrays can contain different data types (integer, string, hash, array). You can mix data types in arrays but it is not recommended.
   
   `fruits = ['apple', 'banana', 'cherry']`
 
-  ### Accessing elements using index
+  **Accessing elements using index:**
   Since arrays are integer-indexed, you can use this syntax to access particular elements:
   ```
   puts fruits[0]  # Outputs 'apple'
   puts fruits[1]  # Outputs 'banana'
   puts fruits[2]  # Outputs 'cherry'
   ```
+ **Adding an element with the shovel operator:**
 
-  ### Adding an element with the shovel operator
   `fruits << 'date'`
   
-  `puts fruits     # Outputs ['apple', 'banana', 'cherry', 'date']`",
+  `puts fruits # Outputs ['apple', 'banana', 'cherry', 'date']`",
   topic: "Data Types",
   link: "https://ruby-doc.org/core-2.7.0/Array.html"
 )
