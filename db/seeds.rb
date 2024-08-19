@@ -1,23 +1,26 @@
-InterviewQuestion.create(
-  question: "Explain the following Data Types: String, Integer, Float, Boolean, Array, Hash",
+# Create Interview Lessons
+Lesson.create(
+  lesson_type: :interview,
+  lesson: "Explain the following Data Types: String, Integer, Float, Boolean, Array, Hash",
   topic: "Data Types",
   link: "https://backend.turing.edu/module1/lessons/datatypes"
 )
-InterviewQuestion.create(
-  question: "What is the differnce between a .map and a .each method in Ruby?",
+Lesson.create(
+  lesson_type: :interview,
+  lesson: "What is the differnce between a .map and a .each method in Ruby?",
   topic: "Enumerables",
   link: "https://medium.com/@abhishektanwar9596/what-is-the-difference-between-map-and-each-in-ruby-1f2fbb5d5842"
 )
-InterviewQuestion.create(
-  question: "What is polymorphism in Object Oriented Programming?",
+Lesson.create(
+  lesson_type: :interview,
+  lesson: "What is polymorphism in Object Oriented Programming?",
   topic: "OOP",
   link: "https://medium.com/@shanikae/polymorphism-explained-simply-7294c8deeef7"
 )
 
-
-
-# Create Javascript Lessons
-JavascriptLesson.create(
+# Create JavaScript Lessons
+Lesson.create(
+  lesson_type: :javascript,
   lesson: "Objects:
   Objects are used to store collections of data and more complex entities. They are created using curly braces {} and can contain properties.
   let person = {
@@ -34,7 +37,8 @@ JavascriptLesson.create(
   topic: "Objects",
   link: "https://www.example.com/javascript_lessons/1"
 )
-JavascriptLesson.create(
+Lesson.create(
+  lesson_type: :javascript,
   lesson: "Functions:
   Functions are reusable blocks of code that perform a specific task. They are defined using the function keyword followed by the function name and parentheses. The code block is enclosed in curly braces.
   function greet(name) {
@@ -43,9 +47,11 @@ JavascriptLesson.create(
     The function greet takes a name as an argument and returns a greeting message. Functions can take multiple arguments and return a value.
     let result = greet('Alice'); // 'Hello, Alice!'",
   topic: "Functions",
-  link: "https://www.example.com/javascript_lessons/1"
+  link: "https://www.example.com
+  _lessons/1"
 )
-JavascriptLesson.create(
+Lesson.create(
+  lesson_type: :javascript,
   lesson: "Conditional Statements:
   Conditional statements allow us to execute different code based on different conditions.
   let number = 10;
@@ -63,10 +69,9 @@ JavascriptLesson.create(
   link: "https://www.example.com/javascript_lessons/1"
 )
 
-
-
 # Create Ruby Lessons
-RubyLesson.create(
+Lesson.create(
+  lesson_type: :ruby,
   lesson: "## Arrays:
   Arrays are ordered lists that are comma seperated and enclosed in square brackets. Arrays can contain different data types (integer, string, hash, array). You can mix data types in arrays but it is not recommended.
   
@@ -87,7 +92,8 @@ RubyLesson.create(
   topic: "Data Types",
   link: "https://ruby-doc.org/core-2.7.0/Array.html"
 )
-RubyLesson.create(
+Lesson.create(
+  lesson_type: :ruby,
   lesson: "Conditional Statements:
   Conditional statements allow us to execute different code based on different conditions.
   example:
@@ -103,7 +109,8 @@ RubyLesson.create(
   topic: "Conditional Logic",
   link: "https://www.rubyguides.com/ruby-tutorial/ruby-if-else/"
 )
-RubyLesson.create(
+Lesson.create(
+  lesson_type: :ruby,
   lesson: ".each method:
   The .each method is an enumerable method that allows you to iterate over each element in an array or hash.
   example:
