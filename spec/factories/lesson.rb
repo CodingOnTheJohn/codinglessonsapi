@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :ruby_lesson do
+  factory :lesson do
     lesson { Faker::Lorem.sentence }
     topic { Faker::Educator.subject}
     link { Faker::Internet.url }
